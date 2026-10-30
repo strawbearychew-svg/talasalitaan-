@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fil">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TALASALITAAN | Silid-Aralan ng Wika at Panitikan</title>
+<style>
+:root{--ink:#28352e;--cream:#fff9ed;--green:#52745b;--yellow:#f4c95d;--coral:#e77d63;--lav:#a9a6d8;--mint:#dcebdc}
+*{box-sizing:border-box}body{margin:0;background:var(--cream);color:var(--ink);font-family:Arial,sans-serif;line-height:1.6}
+header{background:linear-gradient(120deg,#e9b96b,#e9856d 52%,#8da98a);padding:18px 7%;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}
+.brand{font-family:Georgia,serif;font-weight:bold;font-size:1.45rem;letter-spacing:1px}.brand small{display:block;font: .72rem Arial;letter-spacing:2px}
+nav{display:flex;gap:8px;flex-wrap:wrap}nav button{border:0;background:#fff9edcc;padding:10px 16px;border-radius:22px;font-weight:bold;color:var(--ink);cursor:pointer}nav button.active,nav button:hover{background:var(--ink);color:white}
+.hero{padding:72px 8%;background:linear-gradient(90deg,#fff9edee,#fff9edaa),url('https://images.unsplash.com/photo-1455390582262-044c двигатель?auto=format&fit=crop&w=1600&q=80') center/cover}
+.hero .eyebrow{color:#a44f3d;font-weight:bold;letter-spacing:3px}.hero h1{font:clamp(2.5rem,7vw,5.5rem)/1 Georgia,serif;margin:12px 0;color:#34483a}.hero p{max-width:650px;font-size:1.15rem}.tagline{font-weight:bold;color:#a44f3d;letter-spacing:2px}
+main{max-width:1100px;margin:auto;padding:42px 6% 70px}.page{display:none}.page.active{display:block}
+h2{font:2.3rem Georgia,serif;color:#41604a;margin:0 0 10px}.lead{font-size:1.08rem;max-width:800px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin:26px 0}
+.card{background:white;border-radius:18px;padding:23px;box-shadow:0 8px 24px #493b2110;border-top:6px solid var(--yellow)}.card:nth-child(2){border-color:var(--coral)}.card:nth-child(3){border-color:var(--lav)}.card:nth-child(4){border-color:var(--green)}
+.card h3{font:1.35rem Georgia,serif;margin:4px 0 8px}.pill{display:inline-block;background:var(--mint);padding:5px 11px;border-radius:20px;font-size:.8rem;font-weight:bold}
+.quote{background:#e8eddf;padding:25px;border-radius:18px;font:1.4rem Georgia,serif;text-align:center;margin:28px 0}
+.word{background:#fff0d1;border-radius:18px;padding:25px;margin-top:25px}.word strong{font:2rem Georgia,serif;color:#a44f3d}
+table{border-collapse:collapse;width:100%;background:white;border-radius:14px;overflow:hidden;margin:20px 0}th,td{text-align:left;padding:14px;border-bottom:1px solid #eee}th{background:#52745b;color:white}
+.notice{background:#fbe5df;padding:18px;border-radius:14px;margin:16px 0}.btn{display:inline-block;border:0;border-radius:24px;background:#52745b;color:white;padding:12px 19px;font-weight:bold;cursor:pointer;text-decoration:none}.btn:hover{background:#34483a}
+footer{text-align:center;background:#34483a;color:#fff9ed;padding:25px}
+input{padding:12px;border:1px solid #ccc;border-radius:10px;width:min(100%,360px)}.answer{margin-top:12px;font-weight:bold}
+@media(max-width:600px){header{padding:16px 5%}.hero{padding:48px 7%}main{padding:32px 5%}th,td{padding:9px;font-size:.9rem}}
+</style>
+</head>
+<body>
+<header>
+ <div class="brand">TALASALITAAN<small>SILID-ARALAN NG WIKA AT PANITIKAN</small></div>
+ <nav aria-label="Pangunahing menu">
+  <button class="active" onclick="showPage('home',this)">Tahanan</button>
+  <button onclick="showPage('schedule',this)">Iskedyul</button>
+  <button onclick="showPage('news',this)">Pahayagan</button>
+ </nav>
+</header>
+<section class="hero">
+ <div class="eyebrow">WIKA • PANITIKAN • KULTURA • PAGKAMALIKHAIN</div>
+ <h1>Maligayang<br>Pagdating!</h1>
+ <p>Isang makulay na espasyo kung saan ang bawat salita ay may saysay, bawat ideya ay pinahahalagahan, at bawat tinig ay may pagkakataong marinig.</p>
+ <div class="tagline">TUKLASIN. MATUTO. LUMIKHA. MAGPAHAYAG.</div>
+</section>
+<main>
+<section id="home" class="page active">
+ <h2>Ang Aming Silid-Aralan</h2>
+ <p class="lead">Malugod kitang tinatanggap sa <b>TALASALITAAN</b>, isang makabuluhang tahanan ng pagkatuto ng wikang Filipino at pagpapahalaga sa ating panitikan at kultura. Naniniwala tayo na ang pagkatuto ay hindi lamang pagsasaulo ng mga tuntunin—ito ay malayang pagpapahayag, malikhaing pag-iisip, at pag-unawa sa mga kuwentong humuhubog sa ating pagkakakilanlan.</p>
+ <div class="grid">
+  <article class="card"><span class="pill">01 • WIKA</span><h3>Mahusay na Pagpapahayag</h3><p>Linangin ang pagbasa, pagsulat, pakikinig, at pagsasalita sa iba't ibang sitwasyon.</p></article>
+  <article class="card"><span class="pill">02 • PANITIKAN</span><h3>Pagkilala sa mga Akda</h3><p>Tuklasin ang mga akdang sumasalamin sa karanasan, kasaysayan, at kultura.</p></article>
+  <article class="card"><span class="pill">03 • PAG-IISIP</span><h3>Mapanuri at Malikhaing Isipan</h3><p>Magtanong, magsuri, bumuo ng sariling pananaw, at lumikha ng makabuluhang akda.</p></article>
+  <article class="card"><span class="pill">04 • PAGGALANG</span><h3>Bawat Tinig ay Mahalaga</h3><p>Makinig sa iba at magbahagi ng ideya nang may paggalang at tiwala sa sarili.</p></article>
+ </div>
+ <div class="quote">“Ang bawat salita ay may kahulugan, ang bawat kuwento ay may aral, at ang bawat mag-aaral ay may tinig na nararapat pakinggan.”</div>
+ <div class="word"><span class="pill">SALITA NG LINGGO</span><br><strong>Pagkakakilanlan</strong><p>Tumutukoy sa mga katangian, paniniwala, kultura, at pagpapahalagang bumubuo sa pagkatao ng isang indibidwal o pangkat.</p><b>Pag-isipan:</b> Paano nakatutulong ang wikang Filipino sa pagpapanatili ng ating pagkakakilanlan?</div>
+ <div class="card" style="margin-top:22px"><h3>Subukin ang Iyong Kaalaman</h3><p>Ano ang pinakamalapit na kahulugan ng salitang <b>pagkakakilanlan</b>?</p><button class="btn" onclick="document.getElementById('quizanswer').textContent='Tama! Tumutukoy ito sa mga katangiang bumubuo sa pagkatao ng isang tao o pangkat.'">Mga katangian at pagpapahalagang bumubuo sa pagkatao</button><p id="quizanswer" class="answer" aria-live="polite"></p></div>
+</section>
+<section id="schedule" class="page">
+ <h2>Iskedyul ng Aming Pagkatuto</h2><p class="lead">Ang maayos na pagpaplano ng oras ay tumutulong upang maging organisado, handa, at makabuluhan ang bawat pagkakataon ng pagkatuto.</p>
+ <table><thead><tr><th>Araw</th><th>Oras</th><th>Gawain</th></tr></thead><tbody>
+ <tr><td>Lunes</td><td>8:00–9:00 n.u.</td><td>Talakayan sa Wika</td></tr><tr><td>Martes</td><td>8:00–9:00 n.u.</td><td>Pagbasa at Pag-unawa</td></tr><tr><td>Miyerkules</td><td>8:00–9:00 n.u.</td><td>Pag-aaral ng Panitikan</td></tr><tr><td>Huwebes</td><td>8:00–9:00 n.u.</td><td>Malikhaing Pagsulat</td></tr><tr><td>Biyernes</td><td>8:00–9:00 n.u.</td><td>Gawaing Pampangkat at Pagtataya</td></tr>
+ </tbody></table>
+ <div class="notice"><b>Paalala:</b> Halimbawang iskedyul lamang ito. Maaaring baguhin ang oras at mga gawain ayon sa aktuwal na iskedyul ng klase.</div>
+ <h3>Mga Gawaing Dapat Abangan</h3><div class="grid"><div class="card"><h3>Araw ng Pagbasa</h3><p>Pagbabahagi at pagtalakay sa piling akda.</p></div><div class="card"><h3>Paligsahan sa Pagbigkas</h3><p>Pagsasanay sa malinaw at masining na pagpapahayag.</p></div><div class="card"><h3>Likha-Salita</h3><p>Paglikha ng tula, sanaysay, at maikling kuwento.</p></div></div>
+</section>
+<section id="news" class="page">
+ <h2>Balitang TALASALITAAN</h2><p class="lead">Mga balita, anunsiyo, at makabuluhang kaganapan sa ating pamayanan ng pagkatuto.</p>
+ <article class="card"><span class="pill">TAMPOK NA BALITA • HALIMBAWA</span><h3>Pagdiriwang ng Buwan ng Wika</h3><p>Bilang pagkilala sa kahalagahan ng wikang Filipino, maaaring magsagawa ang klase ng mga gawaing nagpapakita ng yaman ng ating wika at panitikan, tulad ng sabayang pagbigkas, malikhaing pagsulat, at pagtatanghal.</p></article>
+ <h3>Mga Anunsiyo</h3><div class="notice">• Ihanda ang mga kagamitan para sa bawat talakayan.<br>• Basahin ang mga itinakdang akda bago ang talakayan.<br>• Makilahok sa mga gawaing pampangkat.<br>• Tingnan ang pahinang ito para sa mga bagong anunsiyo.</div>
+ <article class="card"><span class="pill">TAMPOK NA GAWAIN</span><h3>LIKHA-SALITA: Ang Aking Tinig, Ang Aking Kuwento</h3><p>Isang gawaing nagbibigay ng pagkakataon sa mga estudyante na ipahayag ang kanilang saloobin at karanasan sa pamamagitan ng tula, sanaysay, maikling kuwento, o iba pang malikhaing akda.</p></article>
+ <div class="quote">“Ang pagkatuto ay nagiging higit na makabuluhan kapag ginagamit natin ang ating kaalaman upang magpahayag, umunawa, at magbigay-inspirasyon sa iba.”</div>
+ <p><i>Paalala: Palitan ang mga halimbawang balita at anunsiyo ng tunay at napapanahong impormasyon bago gamitin sa klase.</i></p>
+</section>
+</main>
+<footer><b>TALASALITAAN</b><br>Silid-Aralan ng Wika at Panitikan<br>“Bawat salita ay may saysay. Bawat tinig ay may halaga.”</footer>
+<script>
+function showPage(id,btn){document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));document.getElementById(id).classList.add('active');document.querySelectorAll('nav button').forEach(b=>b.classList.remove('active'));btn.classList.add('active');window.scrollTo({top:0,behavior:'smooth'});}
+</script>
+</body></html>
